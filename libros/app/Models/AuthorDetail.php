@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class genre_book extends Model
+class AuthorDetail extends Model
 {
     use HasFactory;
 }
