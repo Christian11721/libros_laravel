@@ -12,7 +12,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('authors_details', function (Blueprint $table) {
+        Schema::create('author_details', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(Author::class)->constrained()->cascadeOnDelete();
             $table->text('biography');
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('authors_details');
+        Schema::dropIfExists('author_details');
     }
 };
