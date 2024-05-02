@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Author;
+use App\Models\Book;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +17,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+Route::get('autores', function () {
+    return response()->json(Author::all());
+})->name('route_json');
+Route::get('vista', function () {
+    $registros = Book::count();
+    return view('book', compact('registros'));
+});
+Route::get('regreso', function () {
+    return redirect()->route('route_json');
 });
