@@ -2,6 +2,7 @@
 
 use App\Models\Author;
 use App\Models\Book;
+use App\Http\Controllers\GenderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,3 +29,4 @@ Route::get('vista', function () {
 Route::get('regreso', function () {
     return redirect()->route('route_json');
 });
+Route::resource('genders', GenderController::class); 
