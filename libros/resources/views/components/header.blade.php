@@ -1,16 +1,14 @@
 <div id="kt_app_header" class="app-header">
     <!--begin::Header container-->
-    <div class="app-container container-fluid d-flex align-items-stretch flex-stack"
-        id="kt_app_header_container">
+    <div class="app-container container-fluid d-flex align-items-stretch flex-stack" id="kt_app_header_container">
         <!--begin::Sidebar toggle-->
         <div class="d-flex align-items-center d-block d-lg-none ms-n3" title="Show sidebar menu">
-            <div class="btn btn-icon btn-active-color-primary w-35px h-35px me-2"
-                id="kt_app_sidebar_mobile_toggle">
+            <div class="btn btn-icon btn-active-color-primary w-35px h-35px me-2" id="kt_app_sidebar_mobile_toggle">
                 <i class="ki-outline ki-abstract-14 fs-2"></i>
             </div>
             <!--begin::Logo image-->
             <a href="index.html">
-                <img alt="Logo" src="{{asset('media/logos/demo38-small.svg')}}" class="h-30px" />
+                <img alt="Logo" src="{{ asset('media/logos/demo38-small.svg') }}" class="h-30px" />
             </a>
             <!--end::Logo image-->
         </div>
@@ -20,9 +18,8 @@
             <div class="app-navbar-item d-flex align-items-stretch flex-lg-grow-1">
                 <!--begin::Search-->
                 <div id="kt_header_search" class="header-search d-flex align-items-center w-lg-200px"
-                    data-kt-search-keypress="true" data-kt-search-min-length="2"
-                    data-kt-search-enter="enter" data-kt-search-layout="menu"
-                    data-kt-search-responsive="true" data-kt-menu-trigger="auto"
+                    data-kt-search-keypress="true" data-kt-search-min-length="2" data-kt-search-enter="enter"
+                    data-kt-search-layout="menu" data-kt-search-responsive="true" data-kt-menu-trigger="auto"
                     data-kt-menu-permanent="true" data-kt-menu-placement="bottom-start">
                     <!--begin::Tablet and mobile search toggle-->
                     <div data-kt-search-element="toggle"
@@ -33,8 +30,8 @@
                     </div>
                     <!--end::Tablet and mobile search toggle-->
                     <!--begin::Form(use d-none d-lg-block classes for responsive search)-->
-                    <form data-kt-search-element="form"
-                        class="d-none d-lg-block w-100 position-relative mb-5 mb-lg-0" autocomplete="off">
+                    <form data-kt-search-element="form" class="d-none d-lg-block w-100 position-relative mb-5 mb-lg-0"
+                        autocomplete="off">
                         <!--begin::Hidden input(Added to disable form autocomplete)-->
                         <input type="hidden" />
                         <!--end::Hidden input-->
@@ -47,8 +44,7 @@
                             name="search" value placeholder="Search..." data-kt-search-element="input" />
                         <!--end::Input-->
                         <!--begin::Spinner-->
-                        <span
-                            class="search-spinner position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-5"
+                        <span class="search-spinner position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-5"
                             data-kt-search-element="spinner">
                             <span class="spinner-border h-15px w-15px align-middle text-gray-500"></span>
                         </span>
@@ -107,7 +103,7 @@
                 <div class="cursor-pointer symbol symbol-circle symbol-35px symbol-md-45px"
                     data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent"
                     data-kt-menu-placement="bottom-end">
-                    <img src="{{asset('media/avatars/300-2.jpg')}}" alt="user" />
+                    <img src="{{ asset('media/avatars/300-2.jpg') }}" alt="user" />
                 </div>
                 <!--end::Menu wrapper-->
             </div>

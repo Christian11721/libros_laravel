@@ -1,6 +1,7 @@
 @props(['title', 'cardTitle' => '', 'typeOfPage' => ''])
 
 <html>
+
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
@@ -61,7 +62,7 @@
                                         <!--begin::Title-->
                                         <h1
                                             class="page-heading d-flex flex-column justify-content-center text-gray-900 fw-bold fs-1 m-0">
-                                            Tacos
+                                            Géneros
                                         </h1>
                                         <!--end::Title-->
                                         <!--begin::Breadcrumb-->
@@ -108,4 +109,5 @@
     <script src="{{ asset('js/custom/utilities/modals/create-campaign.js') }}"></script>
     <script src="{{ asset('js/custom/utilities/modals/users-search.js') }}"></script>
 </body>
+
 </html>
